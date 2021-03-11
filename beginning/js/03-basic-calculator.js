@@ -16,7 +16,7 @@ num2 = parseInt(entry, 10);
 
 // CHECK TO SEE WHAT OPERATION THEY'RE USING
 let i = 0;
-while (true) {
+do {
 let calChoice = prompt('What operation do you want to perform? (add, subtract, multiply, divide)');
 switch (calChoice){
     case "add":
@@ -36,13 +36,11 @@ switch (calChoice){
         alert(total);
         break;
     default:
-        alert('you have to pick add, subtract, multiply, or divide');
-    
+        alert('you have to pick add, subtract, multiply, or divide');  
 }
 }
+while (true); 
 }
 // CALL THE APPROPRIATE FUNCTION
-function main(){
-    collection();
-}
-main();
+
+collection();
