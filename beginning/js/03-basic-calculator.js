@@ -15,27 +15,34 @@ entry = prompt("Enter second number");
 num2 = parseInt(entry, 10); 
 
 // CHECK TO SEE WHAT OPERATION THEY'RE USING
+let i = 0;
+while (true) {
 let calChoice = prompt('What operation do you want to perform? (add, subtract, multiply, divide)');
 switch (calChoice){
     case "add":
         total = num1 + num2;
-        console.log(total);
+        alert(total);
         break;
     case "subtract":
         total = num1 - num2;
-        console.log(total);
+        alert(total);
         break;
     case "multiply":
         total = num1 * num2;
-        console.log(total);
+        alert(total);
         break;
     case "divide":
         total = num1 / num2;
-        console.log(total);
+        alert(total);
         break;
     default:
         alert('you have to pick add, subtract, multiply, or divide');
+    
+}
 }
 }
 // CALL THE APPROPRIATE FUNCTION
-collection();
+function main(){
+    collection();
+}
+main();
