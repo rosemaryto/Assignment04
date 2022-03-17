@@ -1,33 +1,34 @@
 //STEP 1
-function halfNumber(x) {
-    x = x / 2;
-    console.log(`Half of 5 is ` + x);
+function halfNumber(num) {
+    newNum = num / 2;
+console.log(`Half of ${num} is ${newNum}`);
 }
-halfNumber(5);
+halfNumber(5)
+
 
 
 //STEP 2
-function squareNumber(y) {
-    y = y * y;
-    console.log(`The result of squaring the number 3 is ` + y);
+function squareNumber(num) {
+    newNum = num * num;
+console.log(`Square of ${num} is ${newNum}`);
 }
-squareNumber(3);
+squareNumber(3)
 
 
 //STEP 3
-function percentOf(a, b) {
-    b = a / b;
-    console.log(b + ` is 50% of ` + a);
+function percentOf(num1, num2) {
+    newNum = parseInt(num1 / num2 * 100) ;
+console.log(`Percent of ${num1} is ${newNum} % of ${num2}`);
 }
-percentOf(4, 2)
+percentOf(3,9)
 
 
 //STEP 4
-function findModulus(c, d) {
-    d = d % c;
-    console.log(d + ` is the modulus of 4 and 10`);
+function findModulus(num1, num2) {
+    newNum = num2 % num1 ;
+console.log(`${newNum} is modulus of ${num1} and ${num2}`);
 }
-findModulus(4, 10);
+findModulus(4,10)
 
 
 //STEP 5
@@ -35,7 +36,7 @@ function numCollect() {
 let totalNum=0, num, i;
 for (i = 0; i < 3; i++) {
     while (true) {
-        num = parseInt(prompt('Enter a number'));
+        num = parseInt(prompt('Enter 3 numbers to add'));
         if (num >= 0 && num <= 50) {
             totalNum += num;
             break;
