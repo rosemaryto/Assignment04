@@ -1,8 +1,4 @@
-//USERS CHOICE
-
 let choice = prompt ("Rock, Paper, Scissors?");
-
-//COMPUTER'S CHOICE
 
 let randomNum = Math.floor(Math.random() * 10 + 1);
 let compChoice = randomNum;
@@ -14,8 +10,6 @@ if (randomNum >= 0 && randomNum <= 3) {
     compChoice = "Scissors";
 } 
 
-
-//WHO IS WINNER
 if (choice === "rock") {
     if (compChoice === "Rock") {
         alert("rock and rock is a tie!");
